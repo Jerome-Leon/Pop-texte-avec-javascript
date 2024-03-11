@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* //////////////////// NAV //////////////////// */
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(45, 45, 110);
+    position: fixed;
+    z-index: 10;
+}
+
+.navbar ul{
+    position: relative;
+    z-index: 11;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 1.3rem;
+    width: 20%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.navbar ul li{
+    position: relative;
+    z-index: 12;
+    align-items: center;
+    margin: 11px 0 12px 0;
+    color: #f1f1f1;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1)0.5s;
+    cursor: pointer;
+}
+.navbar ul li:hover{
+    color: #f1f1f1;
+    transform:translateY(-2px);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1)0.5s;
+    color: rgb(252, 207, 62);
+}
+
+.menu-contact{
+    width: 40rem;
+    height: 40rem;
+    display: fixed;
+    position: absolute;
+    background-color: rgb(245, 239, 234);
+    margin: 100px 30%;
+    border-radius: 2rem;
+    transition: ease-in-out 2s;
+}
+
+/* //////////////////// FORMULAIRE //////////////////// */
+
+form{
+    width: 32rem;
+    height: 32rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2.1rem auto;
+    border: solid white 4px;
+    border-radius: 1rem;
+    padding:4%;
+}
+
+form input{
+    width: 50%;
+    height: 2rem;
+    margin: 0 auto;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: inset 3px 2px 4px 1px rgba(0, 0, 0, 0.226);
+}
+
+form textarea{
+    width: 50%;
+    margin: 0 auto;
+    border: none;
+    box-shadow: inset 3px 2px 4px 1px rgba(0, 0, 0, 0.226);
+}
+
+form button.Send{
+    width: 40%;
+    height: 3rem;
+    margin: 0 auto;
+    border: none;
+    background-color: chocolate;
+    border-radius: 1rem;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275)1s;
+    box-shadow: -2px 3px 4px 0px rgba(0, 0, 0, 0.377);
+    padding-bottom: 3.2rem;
+}
+
+form button.Send:hover{
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275)1s;
+    box-shadow: -2px 3px 4px 0px rgba(0, 0, 0, 0.137);
+    background-color: rgb(150, 67, 8);
+}
+
+form h3{
+    margin: 0 auto;
+    font-size: 2.4rem;
+    color: rgb(45, 45, 110);
+}
+
+button h4{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    color: #f1f1f1;
+
+}
+
+/* //////////////////// WINDOW //////////////////// */
+
+#text-window{
+    position: relative;
+    z-index: 15;
+    width: 26%;
+    height: 70px;
+    background-color: rgb(245, 239, 234);
+    border: 2px solid rgb(45, 45, 110);
+    border-radius: 1rem;
+    top: 20px;
+    margin-left: 60%;
+    color: rgb(32, 32, 66);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.7rem;
+}
+
+#btn{
+    position: relative;
+    z-index: 16;
+    width: 8rem;
+    height: 50px;
+    background-color: chocolate;
+    border-radius: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    margin-left: 77%;
+    margin-top: 0.5rem;
+    color: #f1f1f1;
+    border: none;
+    padding-bottom: 3px;
+    box-shadow: -2px 3px 4px 0px rgba(0, 0, 0, 0.377);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1)0.5s;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: rgb(150, 67, 8);
+    box-shadow: -2px 3px 4px 0px rgba(0, 0, 0, 0.13);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1)0.5s;
+}
+.textContent{
+    display: none;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 19px;
+}
+
